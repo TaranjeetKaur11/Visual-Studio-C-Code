@@ -1,0 +1,24 @@
+public class Program
+{
+	
+	public static void Main()
+	{
+		
+		string input ="gafshskljamslgggdjdhddkdjdkjddjdlkddfdertyuj";
+		char[] arr  = input.ToCharArray();
+		for(int i=0; i<arr.Length-1; i++)
+		{
+		  for(int j=i+1; j<arr.Length; j++){
+			  char a = arr[i];
+			  char b = arr[j];
+			  
+			  if(a.CompareTo(b)>0){
+			  char temp = arr[i];
+			  arr[i] = arr[j];
+			  arr[j] = temp;  
+			  }
+		  }
+		}Console.WriteLine(arr);
+		} 	
+	
+}

@@ -1,0 +1,31 @@
+using System;
+
+namespace Sorting_Char
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+                //compare char
+                char[] alpha = new char[] { 'a', 'f', 'e', 's', 'w', 'a', 'f', 'a', 'd' };
+                for (int i = 0; i < alpha.Length - 1; i++)
+                {
+                    for (int j = i + 1; j < alpha.Length; j++)
+                    {
+                        char a = alpha[i];
+                        char b = alpha[j];
+                        if (a.CompareTo(b) > 0)
+                        {
+                            char temp = alpha[i];
+                            alpha[i] = alpha[j];
+                            alpha[j] = temp;
+                        }
+                    }
+
+                }
+                Console.WriteLine(alpha);
+            }
+
+        }
+    }

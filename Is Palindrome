@@ -1,0 +1,22 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{ 
+		// Is Palindrome
+		string input, reverse;
+		Console.WriteLine("Enter the string to check");
+		input = Console.ReadLine();
+		char[]arr = input.ToCharArray();
+		Array.Reverse(arr);
+		reverse = new string(arr) ;
+		bool b = (reverse.CompareTo(input) == 0);
+		if(b == true){
+		Console.WriteLine("Is Palindrome");
+		}else{
+		Console.WriteLine("Is Not Palindrome");
+		}
+		Console.ReadLine();
+		}
+	}

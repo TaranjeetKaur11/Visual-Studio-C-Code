@@ -1,0 +1,21 @@
+using System;
+using System.Text.RegularExpressions;
+					
+public class Program
+{
+	
+	public static void Main()
+	{
+		string pattern = "a";
+		string input = "kjlabclghhyabcfgjhkkfgtattfhgjjhygsyhastgljhysgyabcfgth";
+		MatchCollection match = Regex.Matches(input,pattern);
+		Match m = Regex.Match(input,pattern);
+		
+		Console.WriteLine("Pattern: " + m.Value);
+		Console.WriteLine("Count: " + match.Count);
+		Console.WriteLine("Length Of Pattern: " + m.Length);
+		
+	} 	
+	
+}
+

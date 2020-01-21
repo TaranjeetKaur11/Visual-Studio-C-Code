@@ -1,0 +1,18 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		char firstalb, secondalb, thirdalb;
+		
+		Console.WriteLine("Enter the First Alphabet: ");
+		firstalb = Convert.ToChar(Console.ReadLine());
+		Console.WriteLine("Enter the Second Alphabet: ");
+		secondalb = Convert.ToChar(Console.ReadLine());
+		Console.WriteLine("Enter the Third Alphabet: ");
+		thirdalb = Convert.ToChar(Console.ReadLine());
+		
+		Console.WriteLine(thirdalb+""+secondalb+""+firstalb);
+	}
+}
